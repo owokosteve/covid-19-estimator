@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "nodemon ./src/routes/app.js",
+    "start": "nodemon ./src/estimator.js",
     "lint": "eslint ./src/"
   },
   "dependencies": {
