@@ -13,7 +13,7 @@ const impactCalc = (currentlyInfected, data) => {
 
   const { region, totalHospitalBeds } = data;
   const { avgDailyIncomeInUSD, avgDailyIncomePopulation } = region;
-  const factor = Math.trunc(data / 3);
+  const factor = Math.trunc(days / 3);
   const infectionsByRequestedTime = currentlyInfected * 2 ** factor;
   const servereCasesByRequestedTime = 0.15 * infectionsByRequestedTime;
   const beds = 0.35 * totalHospitalBeds - servereCasesByRequestedTime;
